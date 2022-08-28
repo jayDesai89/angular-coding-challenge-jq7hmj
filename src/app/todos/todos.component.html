@@ -1,0 +1,15 @@
+<div class="todos">
+  <!-- Todo: Create Form -->
+  <form class="newTodo" [formGroup]="taskNameForm" (ngSubmit)="getTask()">
+    <input 
+      formControlName="nameTask"
+      name="text"
+      aria-label="Add todo"
+      placeholder="+ tap to add a todo"
+    />
+  </form>
+
+  <div *ngFor="let task of tasks">
+    <app-task [taskName]="task"></app-task>
+  </div>
+</div>

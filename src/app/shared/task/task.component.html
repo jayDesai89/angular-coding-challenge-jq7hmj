@@ -1,0 +1,6 @@
+<!-- Todo: Incomplete -->
+<div class="todo" [ngClass]="taskCompleteCheck ? 'done' : ''"> 
+  <button class="status" (click)="taskCompleteCheck = !taskCompleteCheck"></button>
+  <div>{{ taskName }}</div>
+  <button class="remove"></button>
+</div>
