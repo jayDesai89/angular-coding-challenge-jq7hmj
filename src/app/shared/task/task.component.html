@@ -2,5 +2,5 @@
 <div class="todo" [ngClass]="taskCompleteCheck ? 'done' : ''"> 
   <button class="status" (click)="taskCompleteCheck = !taskCompleteCheck"></button>
   <div>{{ taskName }}</div>
-  <button class="remove"></button>
+  <button class="remove" (click)="taskStatus(taskName)"></button>
 </div>

@@ -33,4 +33,8 @@ export class TodosComponent implements OnInit {
     this.taskCompleteCheck != this.taskCompleteCheck;
   }
 
+  deleteTask(task){
+    this.tasks.splice(this.tasks.indexOf(task),1);
+  }
+
 }

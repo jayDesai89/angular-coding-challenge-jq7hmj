@@ -10,6 +10,6 @@
   </form>
 
   <div *ngFor="let task of tasks">
-    <app-task [taskName]="task"></app-task>
+    <app-task [taskName]="task" (taskDelete)="deleteTask($event)"></app-task>
   </div>
 </div>
